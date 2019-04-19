@@ -138,14 +138,14 @@ a {
     text-decoration: none;
 }
 .container {
-    max-width: 1300px;
+    max-width: 980px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 0px;
 }
 .btn {
 
@@ -154,6 +154,7 @@ section {
     color: #ffffff;
     background: #9d083b;
     padding: 6px 30px;
+    border-radius: 5px;
 }
 .btn-tab {
     
@@ -170,11 +171,18 @@ section {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
+
+
 img {
+  padding-bottom: 10px;
     max-width: 100%;
     height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 small {
     font-size: 1.2em;
@@ -204,7 +212,7 @@ nav a {
     color: #fff;
     font-size: 3.6em;
     line-height: 70px;
-    padding: 5px 5px;
+    padding: -1px 5px;
 }
 nav .btn {
     background: #fff;
@@ -259,10 +267,62 @@ button {
     border: none;
 }
 
+.container .logo-crni img {
+    max-width: 100%;
+    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:inline;
+}
 
 /* ======== HEADER END ========== */
 
+/* ======== HERO ========== */
+.hero .slides .waiter1 {
+  display: none;
+}
+
+.hero .background {
+background-repeat: no-repeat;
+    background-image: url(../img/slide1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    padding-top: 140px;
+padding-bottom: 140px;
+}
+section.hero {
+  padding: 0;
+}
+h4 {
+  font-family: 'Inknut Antiqua';
+    font-size: 2.6em;
+    color: #e6cc2d;
+    text-align: center;
+}
+
+.hero .slides .btn {
+  text-align:center;
+display: block;
+margin: 0 auto;
+max-width: 160px;
+}
+
+.hero h4 {
+  color: #e6cc2d;
+}
+
+.btn:hover {
+  background-color: #540420;
+  color: white;
+  }
+/* ======== HERO END ========== */
+
 /* ======== MENU ========== */
+
+section.menu {
+  padding-top: 10px;
+}
 .menu .head-title {
     max-width: 551px;
     margin: 0 auto;
@@ -323,6 +383,7 @@ button {
     font-weight: 500;
     padding-right: 15px;
     background: #fff;
+    color: black;
 }
 .menu .food li::after {
     content: "";
@@ -352,31 +413,317 @@ button {
 }
 /* ======== MENU END ========== */
 
+/* ======== SPECIAL OFFER ========== */
+.special-offer p:first-of-type {
+  color: #e6cc2d;
+  font-weight: 800;
+}
+.special-offer h2, h4, p {
+  color: white; 
+}
+
+.special-offer {
+  background-color: black;
+
+}
+section.special-offer {
+  padding-bottom: 15px;
+
+}
+.special-offer h4 {
+  text-align: left;
+}
+.special-offer .flexslider-carousel .slides ul {
+  padding: 0;
+}
+.special-offer h2 {
+  padding-bottom: 20px;
+}
+/* ======== SPECIAL OFFER END ========== */
+/* ======== HAPPENINGS ========== */
+.happenings h5 {
+  color: #9d083b;
+  text-align: center;
+      margin-bottom: 6px;
+    margin-top: 3px;
+}
+.happenings li {
+    padding-bottom: 20px;
+}
+.happenings  li p {
+  text-align: center;
+    margin: 0;
+}
+.happenings li p:first-child {
+    font-weight: 700;
+}
+
+.happenings .btn {
+
+  text-align:center;
+  cursor: pointer;
+ display: inline-block;
+  margin: 0 auto;
+}
+
+.happenings .btn:hover {
+  background-color: #540420;
+}
+
+.happenings p {
+font-weight: 600;
+color: black;
+  }
+/* ======== HAPPENINGS END ========== */
+
+
 /* ======== ABOUT US ========== */
+
 .about-us h5 {
     color: black;
 }
+.about-us p {
+  color: black;
+  font-weight: 400;
+}
+
+
 /* ======== ABOUT US END========== */
+
+
+
+/* ======== GALLERY========== */
+
+.gallery .tabs li {
+     display: inline-block;
+    margin: 0 3px;
+    font-size: 1.8em;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.gallery .unstyle-list {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery h2 {
+      padding-bottom: 5px;
+}
+
+.gallery li img {
+    width: 100%;
+    height: auto;
+    
+   
+}
+
+/* ======== GALLERY END========== */
+
 
 /* ======== INTERESTING FACTS ========== */
 .interesting-facts{
     background-color: black;
+    text-align: left;
 }
-.text-block {
-  column-count:1;
-  padding-left: 15px;
-  padding-right: 15px;
+
+section.interesting-facts {
+  padding-bottom: 15px;
 }
 
 .text-block p {
     color: white;
+    display: block; 
 }
 
 .interesting-facts h2 {
     color: white;
 }
+
+.interesting-facts ul {
+  padding: 0;
+}
+
+.interesting-facts li:nth-child(odd){
+  padding-right: 5px;
+}
+
+.interesting-facts li:nth-child(even){
+  padding-left: 5px;
+}
 /* ======== INTERESTING FACTS END========== */
 
+/* ======== CONTACT ========== */
+
+.contact-div {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.contact ul{
+  padding: 0;
+}
+.contact-div  img {
+ margin-right: 39px;
+  height: auto;
+}
+
+.contact .btn {
+  position: absolute;
+  top: 37%;
+  right: -21%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.contact .btn:hover {
+  background-color: #540420;
+}
+
+.contact .kontakt2 img {
+  width: 100%;
+  height: auto;
+  padding-top: 36px;
+}
+
+.contact p {
+  font-weight: 800;
+  color: black;
+  text-align: center;
+}
+
+
+.contact .btn {
+    background: #9d083b;
+    font-size: 1em;
+    border-radius: 5px;
+
+}
+
+a[href^="mailto"] { color: #9d083b; }
+
+ .contact ul {display: block;
+        text-align: center;
+         width: 70%;
+    margin: auto;
+    }
+    .contact li {
+       display: block;
+        text-align: left;
+        vertical-align: top;
+    }
+/* ======== CONTACT END ========== */
+
+/* ======== FOOTER ========== */
+.footer {
+    padding: 25px 0;
+    background-color: black;
+    text-align: center;
+}
+
+.logo-copy-wrap {
+    display: inline-block;
+}
+
+.logo-copy-wrap small {
+    display: block;
+}
+
+.footer ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer li a {
+    color: #fff;
+}
+
+.footer li a:hover {
+    color: #ca3f3f;
+}
+
+.footer small {
+  color: white;
+}
+/* ======== FOOTER END========== */
+
+/* ======== Modal  ========== */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    max-width: 628px;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+.modal-wrap > * {
+    display: inline-block;
+}
+.modal-wrap .close span {
+    background-color: #d6d6d6;
+}
+.modal-wrap h3 {
+    color: #9d083b;
+    width: 100%;
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+legend {
+  font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+input {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+input::placeholder {
+  color: #d6d6d6;
+  font-size: 16px;
+  font-style: italic;
+}
+input:focus {
+    outline: none;
+    border-color: #f34949;
+}
+input.btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 13px 15px;
+}
+ input[type="date"]:before,
+ input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #d6d6d6;
+    font-style: italic;
+    margin-right: 0.5em;
+  }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -384,10 +731,29 @@ button {
    ========================================================================== */
 @media only screen and (min-width: 480px) {
     section {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    .menu .food li {
+    
+      .footer ul {
+        float: right;
+        padding-top: 0;
+      }
+      .footer li {
+        float: left;
+        padding-left: 25px;
+      }
+      .logo-copy-wrap {
+        float: left;
+        text-align: left;
+      }
+      
+    }
+
+
+@media only screen and (min-width: 768px) {
+
+.menu .food li {
         float: left;
         width: 46%;
         margin-bottom: 35px;
@@ -399,61 +765,137 @@ button {
          margin-right: 4%;
     }
     .menu .tabs li {
-        padding: 11px 27px;
+        
         margin: 0 20px;
     }
+
+/* ======== SPECIAL OFFER========== */
+    .special-offer ul {
+        text-align: left;
     }
+    .special-offer li {
+        display: inline-block;
+        text-align: left;
+        width: calc(23% - 20px);
+        margin-right: 16px;
+        margin-left: 16px;
+        vertical-align: top;
+    }
+/* ======== SPECIAL OFFER END========== */
 
-
-@media only screen and (min-width: 768px) {
-    .text-block {
-    column-count:2;
-    column-gap: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* ======== ABOUT US ========== */
-
-   
-.about-us-div1 {
-    text-align: center;
-    padding: 50px;
+.gallery .gallery li {
+   width: 50%;
+    float: left; 
     
-    /*display: block;*/
+}
+.gallery .gallery ul li:nth-child(odd){
+  padding-right: 5px;
 }
 
-.text1 {
-    margin: 0 auto;
+.gallery .gallery ul li:nth-child(even){
+  padding-left: 5px;
 }
 
-.text1 p {
-    text-align: left;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
+/* ======== INTERESTING FACTS ========== */
+.interesting-facts{
+      display: block;
+    overflow: hidden;
+}
+.interesting-facts .text-block li {
+      width: 50%;
+       
+        float: left;
 
-.about-us-div1 .text1 {
-    float: left;
-    color: black;
-    max-width: 400px;
 }
-.about-us-div1 .img1 {
-   display: inline-block;
-}
-/* ======== ABOUT US END========== */
+/* ======== INTERESTING FACTS END ========== */
+
+/* ======== HAPPENINGS ========== */
+    .happenings ul {
+        text-align: center;
     }
+    .happenings li {
+        display: inline-block;
+        text-align: left;
+            width: calc(39% - -76px);
+        
+        vertical-align: top;
+    }
+
+
+/* ======== HAPPENINGS END ========== */
+
+
+
+/* ======== CONTACT ========== */
+.hours-and-locations .container {
+  margin-left: 30px;
+}
+
+.contact{
+  display: inline-block;
+ width: 100%;
+}
+.contact  li {
+display: inline-block;
+width: 33%;
+
+}
+/* ======== CONTACT END ========== */
+
+    }
+
 
 @media only screen and (min-width: 992px) {
    /* ======== ABOUT US ========== */
 
-
-/* ======== ABOUT US END========== */
-   
+ .content .left {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 10px;
     }
+    .content .right {
+        float: right;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+/* ======== ABOUT US END========== */
+
+       /* ======== CONTACT ========== */
+  .contact  li {
+      display: inline-block;
+      width: 33%;
+      padding-left: 21px;
+      box-sizing: border-box;
+    }
+/* ======== CONTACT END========== */
+
+/* ======== HAPPENINGS========== */
+    .happenings li {
+        display: inline-block;
+        text-align: left;
+        width: calc(25% - 35px);
+        padding-right: 13px;
+        vertical-align: top;
+    }
+
+/* ======== HAPPENINGS END========== */
+ /* ======== INTERIOR ========== */
+    .modal-wrap {
+        padding: 50px;
+    }
+    }
+
 
 @media only screen and (min-width: 1024px) {
  section {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
   }
   /* ======== HEADER ========== */
   header {
@@ -482,8 +924,10 @@ button {
   nav a,
   nav a.btn {
       font-size: 1.8em;
+      font-weight: 450;
   }
   nav a.btn {
+    font-weight: 600;
       color: #fff;
       background: #9d083b;
   }
@@ -491,9 +935,17 @@ button {
   nav .close {
       display: none;
   }
-  /* ======== HEADER END ========== */
+  nav .btn:hover {
+  background-color: #540420;
 }
+  /* ======== HEADER END ========== */
+
+}
+
+    
+
 @media only screen and (min-width: 1200px) {
+
 
 }
 
